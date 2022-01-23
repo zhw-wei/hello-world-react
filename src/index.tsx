@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Router, Route, BrowserRouter, Link } from 'react-router-dom'
+
 ReactDOM.render(
   //strict-mode 严格模式
   <React.StrictMode>
-    <App />
+    {/* App最外层包裹了一个BrowserRouter或HashRouter */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
