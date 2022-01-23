@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Link, Routes } from 'react-router-dom'
+import { Route, Link, Routes} from 'react-router-dom'
 
 import About from './About/About'
 import Home from './Home/Home'
@@ -28,6 +28,8 @@ export default class Comp3 extends Component {
                         {/* react-router-dom升级到6之后，一些属性发生了变化，有些参数已经不适用 */}
                         <Route path='/about' element={<About/>} />
                         <Route path='/home' element={<Home/>} />
+                        {/* 设置默认路由 */}
+                        <Route path='*' element={<Home/>}></Route>
                     </Routes>
 
                 </div>
