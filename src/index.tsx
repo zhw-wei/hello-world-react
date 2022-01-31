@@ -10,9 +10,9 @@ ReactDOM.render(
   //strict-mode 严格模式
   <React.StrictMode>
     {/* App最外层包裹了一个BrowserRouter或HashRouter */}
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
       <App />
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
