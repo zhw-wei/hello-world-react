@@ -5,7 +5,7 @@ export default class Login extends Component {
   render() {
       return <>
         <h2>login</h2>
-        <Button type='primary'>登陆</Button>
+        <Button type='primary'>登陆</Button><br/>
       </>
   }
 }
