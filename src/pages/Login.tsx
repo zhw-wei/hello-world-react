@@ -1,5 +1,6 @@
 import { Button, Form, Input, Checkbox } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import LoginStyple from "./Login.module.scss"
 
 //使用rfc快捷键生成函数式组件，hooks作为react开发主要方式
 //不要使用rcc快捷键生成类式组件，因为现行的很多教程、文档都把函数式作为主要讲解方向
@@ -20,7 +21,7 @@ export default function Login() {
         console.log('Failed:', errorInfo);
     };
 
-    return (
+    return <div>
         <Form name="basic" labelCol={{ span: 8, }} wrapperCol={{ span: 16, }} initialValues={{ remember: true, }}
             onFinish={onFinish} onFinishFailed={onFinishFailed} autoComplete="off" >
             <Form.Item label="Username" name="username"
@@ -41,5 +42,5 @@ export default function Login() {
                 <Button type="primary" htmlType="submit"> 登录 </Button>
             </Form.Item>
         </Form>
-    );
+    </div>;
 }
